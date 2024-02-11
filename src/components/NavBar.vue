@@ -91,6 +91,7 @@
       </nav>
     </nav>
   </header>
+  <!-- RouterView används för att visa komponenten -->
   <RouterView />
 </template>
 

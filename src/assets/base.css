@@ -11,3 +11,6 @@ body {
   padding-top: 10vh;
   padding-bottom: 2vh;
 }
+.btn btn-primary {
+  background-color: brown;
+}

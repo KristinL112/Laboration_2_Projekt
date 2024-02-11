@@ -1,7 +1,9 @@
-<script setup></script>
+<!-- Denna del av koden använder 'script setup' för att importera komponenter och använda Composition API -->
+<script setup>
+  // Importerar komponenten HeroImage.vue
+  import HeroImage from '../components/HeroImage.vue'
+</script>
 
 <template>
-  <main>
-    <h1>Up and running</h1>
-  </main>
+  <HeroImage />
 </template>
