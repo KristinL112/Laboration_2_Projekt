@@ -10,27 +10,40 @@
     <!--Centrering av text -->
     <div class="centered">
       <!-- Rubrik-->
-      <h1>Find universities</h1>
+      <h1>Find your dream university today</h1>
     </div>
   </div>
 </template>
 
 <style>
   #wrapper-hero img {
-    margin: 0 auto; /* Centrerar bilden horisontellt */
+    margin: 0 auto; /* Bilden horisontellt */
     height: auto; /* Gör bilden responsiv*/
     overflow-x: hidden; /* Döljer horisontell overflow av bilden */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
   }
 
   /* Stilar för centrerad text */
   #wrapper-hero .centered {
-    position: absolute; /* Absolut positionering relativt till första föräldern med relativ eller absolut positionering */
-    top: 50%; /* Centrerar vertikalt till 50% av förälderns höjd */
-    left: 50%; /* Centrerar horisontellt till 50% av förälderns bredd */
+    position: absolute;
+    top: 30%; /* Centrerar vertikalt */
+    left: 50%; /* Centrerar horisontellt  */
     transform: translate(
       -50%,
       -50%
     ); /* Justerar positionen så att centrum av elementet hamnar exakt i mitten */
-    color: white; /* Sätter textfärg till vit */
+    color: white; /* vit textfärg */
+
+    align-items: center;
+    margin: auto;
+    background-color: rgba(103, 151, 161, 0.8);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    border-radius: 8px;
   }
 </style>

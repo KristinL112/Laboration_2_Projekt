@@ -16,5 +16,6 @@ app.use(createPinia())
 app.use(router)
 
 app.use(bootstrap)
+// app.use(fetch)
 
 app.mount('#app')

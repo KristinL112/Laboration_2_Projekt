@@ -11,6 +11,9 @@ body {
   padding-top: 10vh;
   padding-bottom: 2vh;
 }
-.btn btn-primary {
-  background-color: brown;
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
 }
