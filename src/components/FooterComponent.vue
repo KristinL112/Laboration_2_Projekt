@@ -49,7 +49,7 @@
         <div v-if="!submitted">
           <!-- inmatningsfält för e-postadress -->
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email"></label>
             <!-- Binder in värdet av 'email' till inmatningsfältet,
                      använder dynamiska klasser baserat på villkor och hanterar blur-eventet -->
             <input
@@ -81,7 +81,17 @@
         </div>
       </div>
     </div>
-    <div class="card-footer text-body-secondary">2023 Copyright: Kristin</div>
+    <div class="card-footer text-body-secondary">
+      <div>
+        <RouterLink class="footer-link" to="/">Home</RouterLink>
+      </div>
+      <div>
+        <RouterLink class="footer-link" to="/about">About</RouterLink>
+      </div>
+      <div>
+        <div>© 2024 Copyright: Kristin</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -92,11 +102,15 @@
     border-radius: 12px;
   }
 
+  .card-text {
+    padding-top: 2vh;
+  }
+
   #mail {
-    margin-top: 5vh;
+    margin-top: 2vh;
   }
   .form-wrap {
-    padding-top: 10px;
+    padding-top: 1vh;
   }
   .alert {
     padding-top: 2vh;
@@ -105,6 +119,19 @@
     margin-bottom: 0rem;
   }
   .form-group {
-    padding-top: 1vh;
+    padding-top: 2vh;
+  }
+
+  .card-footer {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+
+  .footer-link {
+    text-decoration: none;
+    color: #000000;
+    list-style: none;
   }
 </style>

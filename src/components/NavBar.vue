@@ -9,7 +9,23 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <!-- En RouterLink som fungerar som en länk till startsidan -->
-        <RouterLink class="navbar-brand" to="/">UNIVERSITY</RouterLink>
+        <div>
+          <RouterLink class="navbar-brand" to="/">
+            <img
+              src="../assets/img/logo.png"
+              alt="Logo"
+              width="50"
+              height="50"
+              class="d-inline-block align-text-top"
+            />
+            <span>UNIVERSITY</span>
+          </RouterLink>
+          <!-- En RouterLink som fungerar som en länk till startsidan -->
+
+          <!-- <div class="logoname">
+            <RouterLink class="navbar-brand" to="/">UNIVERSITY</RouterLink>
+          </div> -->
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -23,19 +39,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <!-- <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/"
-                >Lorem ipsum</RouterLink
-              >
-            </li> -->
             <li class="nav-item">
               <RouterLink class="nav-link" to="/">Home</RouterLink>
             </li>
-
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/about"
-                >University facts</RouterLink
-              >
+              <RouterLink class="nav-link" to="/about">About</RouterLink>
             </li>
           </ul>
         </div>
@@ -47,8 +55,9 @@
 </template>
 
 <style scoped>
-  /* Changeing backround color */
-
+  span {
+    font-size: 3vh;
+  }
   .navbar {
     background-color: rgb(169, 203, 203);
     height: 10vh;
@@ -57,15 +66,7 @@
   #navbarNav {
     justify-content: flex-end;
   }
-  .sitename {
-    position: absolute; /* Absolut positionering relativt till första föräldern med relativ eller absolut positionering */
-    top: 50%; /* Centrerar vertikalt till 50% av förälderns höjd */
-    left: 50%; /* Centrerar horisontellt till 50% av förälderns bredd */
-    transform: translate(
-      -50%,
-      -50%
-    ); /* Justerar positionen så att centrum av elementet hamnar exakt i mitten */
-  }
+
   /* Adjusting hamburger nav for mobile view */
   button.navbar-toggler {
     background-color: white;

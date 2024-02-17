@@ -20,10 +20,10 @@
     margin: 0 auto; /* Bilden horisontellt */
     height: auto; /* Gör bilden responsiv*/
     overflow-x: hidden; /* Döljer horisontell overflow av bilden */
-    background-position: center;
+    /* background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    position: relative; */
   }
 
   /* Stilar för centrerad text */
@@ -37,13 +37,9 @@
     ); /* Justerar positionen så att centrum av elementet hamnar exakt i mitten */
     color: white; /* vit textfärg */
 
-    align-items: center;
-    margin: auto;
-    background-color: rgba(103, 151, 161, 0.8);
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
+    background-color: rgba(39, 46, 48, 0.7);
+    padding: 1vh;
+
     border-radius: 8px;
   }
 </style>

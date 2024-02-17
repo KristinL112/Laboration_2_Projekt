@@ -1,4 +1,3 @@
-<!-- script setup används för att importera komponenter och använda Composition API -->
 <script setup>
   // Importerar komponenten HeroImage.vue och Search
 
