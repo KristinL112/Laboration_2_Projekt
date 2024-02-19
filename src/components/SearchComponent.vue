@@ -81,4 +81,7 @@
   .hero {
     margin-bottom: 1vh;
   }
+  .dark btn {
+    background-color: #415669;
+  }
 </style>

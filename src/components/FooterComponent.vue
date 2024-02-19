@@ -95,7 +95,7 @@
   </div>
 </template>
 
-<style scoped>
+<style>
   .card-text {
     padding-top: 2vh;
   }

@@ -34,6 +34,7 @@
 
     background-color: rgba(39, 46, 48, 0.7);
     padding: 1vh;
+    color: white;
 
     border-radius: 8px;
   }

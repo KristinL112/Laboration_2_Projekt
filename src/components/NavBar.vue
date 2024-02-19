@@ -7,6 +7,8 @@
   <!--template är "html-filen" -->
   <header>
     <nav class="navbar navbar-expand-lg">
+      <div>{{ mode }}</div>
+      <ToggleComponent :mode="mode" @toggle="$emit('toggle')" />
       <div class="container-fluid">
         <div id="wrapper-logo">
           <img src="../assets/img/university_logo_new.png" alt="logo" />
@@ -63,6 +65,14 @@
   <RouterView />
 </template>
 
+<script>
+  import ToggleComponent from '@/components/ToggleComponent.vue'
+  export default {
+    props: [''],
+    components: { toggleComponent: ToggleComponent }
+  }
+</script>
+
 <style scoped>
   header {
     line-height: 1.5;
@@ -94,9 +104,24 @@
   .navbar-brand {
     background-color: rgb(145, 190, 205);
   }
+
   .navbar {
     background-color: rgb(190, 212, 212);
     height: 12vh;
+  }
+
+  .dark header {
+    background-color: #15202b;
+  }
+
+  .dark nav {
+    background-color: #1c252d;
+  }
+  .dark nav-item {
+    color: white;
+  }
+  .dark btn {
+    background-color: #415669;
   }
 
   /* Adjusting hamburger nav for mobile view */
