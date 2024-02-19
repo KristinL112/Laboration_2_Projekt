@@ -107,6 +107,7 @@
     padding-top: 1vh;
   }
   .alert {
+    background-color: rgb(190, 212, 212);
     padding-top: 2vh;
   }
   .alert h5 {

@@ -22,10 +22,10 @@
   .toggle {
     position: absolute;
     display: inline-block;
-    width: 60px;
-    height: 34px;
-    position: absolute;
-    top: 50%; /* Centrerar vertikalt */
+    width: 47px;
+    height: 24px;
+
+    top: 70%; /* Centrerar vertikalt */
     left: 50%; /* Centrerar horisontellt  */
   }
 
@@ -42,7 +42,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #15202b;
+    background-color: #32404e;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -50,10 +50,10 @@
   .toggler:before {
     position: absolute;
     content: '';
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 18px;
+    width: 18px;
+    left: 1px;
+    bottom: 3px;
     background-color: #fff;
     -webkit-transition: 0.4s;
     transition: 0.4s;

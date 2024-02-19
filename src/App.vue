@@ -1,11 +1,11 @@
 <template>
   <div class="app" :class="mode">
-    <NavBar v-bind:mode="mode" @toggle="toggle" />
     <header>
+      <NavBar v-bind:mode="mode" @toggle="toggle" />
       <!-- Nav -->
       <!-- <NavBar /> -->
       <!-- Footer -->
-      <FooterComponent />
+      <FooterComponent v-bind:mode="mode" @toggle="toggle" />
     </header>
   </div>
 </template>
@@ -21,7 +21,7 @@
     components: { navBar: NavBar },
     data() {
       return {
-        mode: 'dark'
+        mode: 'light'
       }
     },
     methods: {
@@ -38,7 +38,7 @@
 
 <style>
   .app {
-    background-color: rgb(210, 218, 225);
+    background-color: rgb(190, 212, 212);
     color: black;
   }
 

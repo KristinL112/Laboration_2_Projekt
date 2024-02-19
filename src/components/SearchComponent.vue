@@ -69,10 +69,12 @@
 
 <style>
   .btn {
-    background-color: rgb(190, 212, 212);
-    color: black;
+    background-color: #32404e;
+    color: white;
     border: none;
-    border-radius: 12px;
+    border-radius: 34px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .btn:hover {
     background-color: rgb(87, 147, 155);
@@ -80,8 +82,5 @@
 
   .hero {
     margin-bottom: 1vh;
-  }
-  .dark btn {
-    background-color: #415669;
   }
 </style>

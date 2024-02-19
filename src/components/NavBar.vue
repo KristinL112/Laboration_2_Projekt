@@ -38,7 +38,7 @@
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="navbarOffcanvasLgLabel">
-              Universities
+              Global University Guide
             </h5>
             <button
               type="button"
@@ -73,7 +73,7 @@
   }
 </script>
 
-<style scoped>
+<style>
   header {
     line-height: 1.5;
     max-height: 100vh;
@@ -86,6 +86,7 @@
 
   .sitename {
     font-size: 3vh;
+    color: black;
     padding-left: 1vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
       'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -107,9 +108,14 @@
 
   .navbar {
     background-color: rgb(190, 212, 212);
-    height: 12vh;
+    height: 14vh;
   }
 
+  header nav .nav-link:hover {
+    background-color: azure;
+  }
+
+  /* Dark mode */
   .dark header {
     background-color: #15202b;
   }
@@ -117,11 +123,25 @@
   .dark nav {
     background-color: #1c252d;
   }
-  .dark nav-item {
-    color: white;
+
+  .dark header nav .nav-link {
+    color: azure;
   }
+
+  .dark header nav .nav-link:hover {
+    color: #1c252d;
+  }
+
+  .dark header nav .sitename {
+    color: rgb(255, 255, 255);
+  }
+
   .dark btn {
     background-color: #415669;
+  }
+
+  .dark nav-link {
+    color: white;
   }
 
   /* Adjusting hamburger nav for mobile view */
