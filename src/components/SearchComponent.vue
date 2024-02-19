@@ -12,6 +12,7 @@
           />
 
           <!-- En knapp för att söka -->
+
           <div class="button">
             <a
               type="button"
@@ -66,11 +67,15 @@
   }
 </script>
 
-<style scoped>
+<style>
   .btn {
-    background-color: rgb(91, 165, 175);
+    background-color: rgb(190, 212, 212);
+    color: black;
     border: none;
     border-radius: 12px;
+  }
+  .btn:hover {
+    background-color: rgb(87, 147, 155);
   }
 
   .hero {

@@ -4,6 +4,16 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+h1,
+.nav-link,
+.footer-link,
+.btn-primary,
+h5,
+h3 p,
+h4 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 /* .title {
   display: flex;

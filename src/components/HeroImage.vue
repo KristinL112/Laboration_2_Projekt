@@ -20,10 +20,6 @@
     margin: 0 auto; /* Bilden horisontellt */
     height: auto; /* Gör bilden responsiv*/
     overflow-x: hidden; /* Döljer horisontell overflow av bilden */
-    /* background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative; */
   }
 
   /* Stilar för centrerad text */
@@ -35,7 +31,6 @@
       -50%,
       -50%
     ); /* Justerar positionen så att centrum av elementet hamnar exakt i mitten */
-    color: white; /* vit textfärg */
 
     background-color: rgba(39, 46, 48, 0.7);
     padding: 1vh;

@@ -6,15 +6,32 @@
 
 <template>
   <div>
-    <div>
-      <h1>{{ title }}</h1>
-      <ChildComponent v-on:changeTitle="updateTitleText($event)" />
-    </div>
     <div class="header"><h4>University facts</h4></div>
+    <AboutComponent />
+    <div>
+      <ChildComponent v-on:changeTitle="updateTitleText($event)" />
+      <p>{{ title }}</p>
+    </div>
   </div>
-  <ChildComponent />
-  <AboutComponent />
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        title: ''
+      }
+    },
+    name: 'AboutView',
+    components: { childComponent: ChildComponent },
+
+    methods: {
+      updateTitleText(title) {
+        this.title = title
+      }
+    }
+  }
+</script>
 
 <style scoped>
   .header,
@@ -23,22 +40,3 @@
     padding-top: 2vh;
   }
 </style>
-
-<script>
-  export default {
-      data() {
-        return {
-          title: 'Child to parent Data'
-        }
-      },
-      name: 'AboutView',
-      components: { "child-component": ChildComponent},
-
-
-    methods: {
-        updateTitleText(title)
-        {
-           this.title = title
-    }
-  }
-</script>

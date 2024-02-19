@@ -1,7 +1,4 @@
 <template>
-  <div>
-    <!-- <p>{{ message }}</p> -->
-  </div>
   <div class="about-card">
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
@@ -16,8 +13,30 @@
             <p class="card-text">
               This is a longer card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
-              longer.
+              longer.This is a longer card with supporting text below as a
+              natural lead-in to additional content. This content is a little
+              bit longer.
             </p>
+
+            <p class="d-inline-flex gap-1">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Read more
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel
+                is hidden by default but revealed when the user activates the
+                relevant trigger.
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -35,6 +54,25 @@
               lead-in to additional content. This content is a little bit
               longer.
             </p>
+            <p class="d-inline-flex gap-1">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Read more
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel
+                is hidden by default but revealed when the user activates the
+                relevant trigger.
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -89,19 +89,13 @@
         <RouterLink class="footer-link" to="/about">About</RouterLink>
       </div>
       <div>
-        <div>© 2024 Copyright: Kristin</div>
+        <p>© 2024 Copyright: Kristin</p>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-  .btn {
-    background-color: rgb(91, 165, 175);
-    border: none;
-    border-radius: 12px;
-  }
-
   .card-text {
     padding-top: 2vh;
   }
@@ -123,6 +117,7 @@
   }
 
   .card-footer {
+    background-color: rgb(190, 212, 212);
     padding-top: 5vh;
     padding-bottom: 5vh;
     padding-left: 5vh;
