@@ -19,6 +19,9 @@
 
 <style>
   #wrapper-hero img {
+    margin: 0 auto; /* Bilden horisontellt */
+    height: auto; /* Gör bilden responsiv*/
+    overflow-x: hidden; /* Döljer horisontell overflow av bilden */
   }
 
   /* Stilar för centrerad text */
