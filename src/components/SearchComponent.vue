@@ -77,10 +77,14 @@
       'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .btn:hover {
-    background-color: rgb(87, 147, 155);
+    background-color: #415669;
   }
 
   .hero {
     margin-bottom: 1vh;
+  }
+
+  .dark #title {
+    color: white;
   }
 </style>

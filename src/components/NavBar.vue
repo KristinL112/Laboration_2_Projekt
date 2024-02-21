@@ -7,8 +7,11 @@
   <!--template är "html-filen" -->
   <header>
     <nav class="navbar navbar-expand-lg">
+      <!--toggler start-->
       <div>{{ mode }}</div>
       <ToggleComponent :mode="mode" @toggle="$emit('toggle')" />
+      <!--toggler slut-->
+
       <div class="container-fluid">
         <div id="wrapper-logo">
           <img src="../assets/img/university_logo_new.png" alt="logo" />
@@ -87,13 +90,15 @@
   .sitename {
     font-size: 3vh;
     color: black;
+    background-color: rgb(190, 212, 212);
+
     padding-left: 1vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
       'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
   /* Stilar för offcanvas-titeln, sätter textfärg till svart */
-  .offcanvas-title {
+  .offcanvas-header {
     color: black;
   }
 
@@ -102,34 +107,31 @@
     background-color: rgb(255, 255, 255);
   }
 
-  .navbar-brand {
-    background-color: rgb(145, 190, 205);
-  }
-
   .navbar {
     background-color: rgb(190, 212, 212);
     height: 14vh;
   }
 
-  header nav .nav-link:hover {
+  .nav-link:hover {
     background-color: azure;
   }
 
   /* Dark mode */
-  .dark header {
-    background-color: #15202b;
-  }
-
-  .dark nav {
-    background-color: #1c252d;
+  .dark header nav {
+    background-color: #222727;
   }
 
   .dark header nav .nav-link {
     color: azure;
   }
 
+  .dark .sitename {
+    background-color: #222727;
+  }
+
   .dark header nav .nav-link:hover {
-    color: #1c252d;
+    color: #ffffff;
+    background-color: #344555;
   }
 
   .dark header nav .sitename {
@@ -137,11 +139,21 @@
   }
 
   .dark btn {
-    background-color: #415669;
+    background-color: #414d58;
   }
 
   .dark nav-link {
     color: white;
+  }
+
+  /* Dark mode offcanvas */
+
+  .dark .offcanvas-header {
+    color: black;
+  }
+
+  .dark div .offcanvas-body {
+    background-color: #222727;
   }
 
   /* Adjusting hamburger nav for mobile view */

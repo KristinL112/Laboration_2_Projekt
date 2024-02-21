@@ -1,11 +1,7 @@
 <template>
   <div class="toggle-wrapper">
     <label class="toggle">
-      <input
-        type="checkbox"
-        :checked="mode === 'dark'"
-        @change="$emit('toggle')"
-      />
+      <input type="checkbox" :checked="mode === ''" @change="$emit('toggle')" />
 
       <span class="toggler round"></span>
     </label>
@@ -22,11 +18,10 @@
   .toggle {
     position: absolute;
     display: inline-block;
-    width: 47px;
-    height: 24px;
-
-    top: 70%; /* Centrerar vertikalt */
-    left: 50%; /* Centrerar horisontellt  */
+    width: 42px;
+    height: 19px;
+    top: 76%;
+    right: 5%;
   }
 
   .toggle input {
@@ -50,10 +45,10 @@
   .toggler:before {
     position: absolute;
     content: '';
-    height: 18px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
     left: 1px;
-    bottom: 3px;
+    bottom: 2px;
     background-color: #fff;
     -webkit-transition: 0.4s;
     transition: 0.4s;
