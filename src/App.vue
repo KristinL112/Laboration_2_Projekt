@@ -1,18 +1,19 @@
 <template>
+  <!--en class "app" och en class som binder till mode är dark eller light  -->
   <div class="app" :class="mode">
     <header>
-      <!-- toggler-->
-      <NavBar v-bind:mode="mode" @toggle="toggle" />
       <!-- Nav -->
-      <!-- <NavBar /> -->
-      <!-- Footer -->
+      <NavBar v-bind:mode="mode" @toggle="toggle" />
+      <!-- Email -->
       <EmailForm v-bind:mode="mode" @toggle="toggle" />
+      <!-- Footer -->
       <FooterComponent v-bind:mode="mode" @toggle="toggle" />
     </header>
   </div>
 </template>
 
 <script setup>
+  // Importerar Navbar och Footer
   import NavBar from './components/NavBar.vue'
   import FooterComponent from './components/FooterComponent.vue'
 </script>
@@ -47,7 +48,8 @@
     background-color: rgb(190, 212, 212);
     color: black;
   }
-  /* Dark mode*/
+
+  /* Dark mode */
   .dark {
     background-color: #1c252d;
   }

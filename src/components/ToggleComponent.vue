@@ -1,13 +1,14 @@
 <template>
   <div class="toggle-wrapper">
     <label class="toggle">
+      <!-- I denna variabel kollas om mode är lika med dark  -->
       <input type="checkbox" :checked="mode === ''" @change="$emit('toggle')" />
-
       <span class="toggler round"></span>
     </label>
   </div>
 </template>
 
+<!-- Props  -->
 <script>
   export default {
     props: ['mode']
@@ -18,10 +19,15 @@
   .toggle {
     position: absolute;
     display: inline-block;
-    width: 42px;
-    height: 19px;
-    top: 76%;
-    right: 5%;
+    position: center;
+    width: 50px;
+    height: 25px;
+
+    top: 80%; /* Centrerar vertikalt */
+    left: 50%; /* Centrerar horisontellt  */
+    transform: translate(-50%, -50%);
+    /* top: 76%;
+    right: 5%; */
   }
 
   .toggle input {
@@ -38,22 +44,21 @@
     right: 0;
     bottom: 0;
     background-color: #32404e;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
   }
 
   .toggler:before {
     position: absolute;
+
     content: '';
-    height: 16px;
-    width: 16px;
-    left: 1px;
-    bottom: 2px;
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
     background-color: #fff;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
-
+  /* Tar input till toggler */
   input:checked + .toggler {
     background-color: #415669;
   }
@@ -62,6 +67,7 @@
     box-shadow: 0 0 2px #415669;
   }
 
+  /* Toggler är checked och unchecked */
   input:checked + .toggler:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);

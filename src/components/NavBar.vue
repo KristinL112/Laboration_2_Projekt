@@ -7,11 +7,13 @@
   <!--template är "html-filen" -->
   <header>
     <nav class="navbar navbar-expand-lg">
-      <!--toggler start-->
+      <!--PROPS - toggler start-->
       <div>{{ mode }}</div>
-      <ToggleComponent :mode="mode" @toggle="$emit('toggle')" />
+      <!--kallar på funktionen "toggle"-->
+      <div><ToggleComponent :mode="mode" @toggle="$emit('toggle')" /></div>
       <!--toggler slut-->
 
+      <!--Nav links-->
       <div class="container-fluid">
         <div id="wrapper-logo">
           <img src="../assets/img/university_logo_new.png" alt="logo" />
@@ -69,6 +71,7 @@
 </template>
 
 <script>
+  /* importerar Togglekomponenten */
   import ToggleComponent from '@/components/ToggleComponent.vue'
   export default {
     props: [''],
@@ -80,15 +83,16 @@
   header {
     line-height: 1.5;
     max-height: 100vh;
+    transition: background-color 0, 3s ease-in-out;
   }
 
   #wrapper-logo img {
-    /* margin: 0 auto; Bilden horisontellt */
+    margin: 0 auto; /* Bilden horisontellt */
     height: 60px; /* Gör bilden responsiv*/
   }
 
   .sitename {
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: black;
     background-color: rgb(190, 212, 212);
 
@@ -97,36 +101,42 @@
       'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
-  /* Stilar för offcanvas-titeln, sätter textfärg till svart */
+  /* Stil för offcanvas-titeln, sätter textfärg till svart */
   .offcanvas-header {
     color: black;
   }
 
-  /* Stilar för navbar-toggler, sätter bakgrundsfärg till vit */
+  /* Stil för navbar-toggler, sätter bakgrundsfärg till vit */
   .navbar-toggler {
     background-color: rgb(255, 255, 255);
   }
 
   .navbar {
     background-color: rgb(190, 212, 212);
-    height: 14vh;
+    height: 12vh;
   }
 
   .nav-link:hover {
     background-color: azure;
   }
 
-  /* Dark mode */
+  /* Adjusting hamburger nav for mobile view */
+  button.navbar-toggler {
+    background-color: white;
+    color: rgb(190, 212, 212);
+  }
+
+  /* DARK MODE nav */
   .dark header nav {
-    background-color: #222727;
+    background-color: #1c252d;
   }
 
   .dark header nav .nav-link {
-    color: azure;
+    color: rgb(255, 255, 255);
   }
 
   .dark .sitename {
-    background-color: #222727;
+    background-color: #1c252d;
   }
 
   .dark header nav .nav-link:hover {
@@ -138,27 +148,13 @@
     color: rgb(255, 255, 255);
   }
 
-  .dark btn {
-    background-color: #414d58;
-  }
-
-  .dark nav-link {
-    color: white;
-  }
-
-  /* Dark mode offcanvas */
-
-  .dark .offcanvas-header {
-    color: black;
-  }
-
-  .dark div .offcanvas-body {
-    background-color: #222727;
-  }
-
-  /* Adjusting hamburger nav for mobile view */
-  /* button.navbar-toggler {
+  .dark button.navbar-toggler {
     background-color: white;
-    color: white;
-  } */
+    color: #1c252d;
+  }
+
+  .dark .offcanvas {
+    background-color: #344555;
+  }
+  /* DARK MODE nav END*/
 </style>

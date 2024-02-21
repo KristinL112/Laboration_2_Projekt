@@ -11,8 +11,7 @@
             placeholder="Search for a university or country"
           />
 
-          <!-- En knapp för att söka -->
-
+          <!-- Button för att söka -->
           <div class="button">
             <a
               type="button"
@@ -22,6 +21,7 @@
               >Search</a
             >
           </div>
+          <!-- Button -->
 
           <div v-for="country in countries" :key="country.name">
             <ul class="list-group">
@@ -73,6 +73,7 @@
     color: white;
     border: none;
     border-radius: 34px;
+    padding-bottom: 1 rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
       'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }

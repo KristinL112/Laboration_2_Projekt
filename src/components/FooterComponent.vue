@@ -60,7 +60,7 @@
     list-style: none;
   }
 
-  /* Add styles for dark mode here */
+  /* Styles for dark mode here */
 
   .dark .card-footer {
     background-color: #1c252d;
@@ -68,8 +68,5 @@
 
   .dark .footer-link {
     color: white;
-  }
-  .dark header {
-    background-color: #1c252d;
   }
 </style>

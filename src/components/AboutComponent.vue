@@ -1,3 +1,5 @@
+<!-- About-sida med cards från Bootrap-->
+
 <template>
   <div class="card-group">
     <div class="card">
