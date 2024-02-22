@@ -39,6 +39,7 @@
   </section>
 </template>
 
+<!-- Fetch för att söka efter land eller univeristet -->
 <script>
   export default {
     data() {

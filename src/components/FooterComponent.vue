@@ -16,12 +16,6 @@
   </div>
 </template>
 
-<script>
-  export default {
-    props: ['mode']
-  }
-</script>
-
 <style>
   .card-text {
     padding-top: 2vh;

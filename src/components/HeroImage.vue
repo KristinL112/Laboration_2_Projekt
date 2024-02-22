@@ -34,7 +34,7 @@
       -50%
     ); /* Justerar positionen så att centrum av elementet hamnar exakt i mitten */
 
-    background-color: rgba(42, 62, 79);
+    background-color: rgba(42, 62, 79, 0.8);
     padding: 1vh;
     color: white;
 

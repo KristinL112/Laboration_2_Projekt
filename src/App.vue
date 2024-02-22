@@ -5,7 +5,7 @@
       <!-- Nav -->
       <NavBar v-bind:mode="mode" @toggle="toggle" />
       <!-- Email -->
-      <EmailForm v-bind:mode="mode" @toggle="toggle" />
+
       <!-- Footer -->
       <FooterComponent v-bind:mode="mode" @toggle="toggle" />
     </header>

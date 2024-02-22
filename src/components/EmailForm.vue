@@ -37,7 +37,7 @@
 
 <template>
   <div class="card text-center">
-    <div class="card-header">Global University Guide</div>
+    <div class="card-header">Features</div>
     <div class="card-body">
       <h5 class="card-title">Sign up for newsletter</h5>
       <p class="card-text">
