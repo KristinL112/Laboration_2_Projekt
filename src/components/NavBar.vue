@@ -7,9 +7,9 @@
   <!--template är "html-filen" -->
   <header>
     <nav class="navbar navbar-expand-lg">
-      <!--PROPS - toggler start-->
+      <!--En PROPS-toggler, visar värdet "mode",rendera en ToggleComponent-->
       <div>{{ mode }}</div>
-      <!--kallar på funktionen "toggle"-->
+      <!--När ToggleComponent används sker händelsen "toggle" och uppdaterar parentkomponenten.-->
       <div><ToggleComponent :mode="mode" @toggle="$emit('toggle')" /></div>
       <!--toggler slut-->
 
@@ -73,10 +73,6 @@
 <script>
   /* importerar Togglekomponenten */
   import ToggleComponent from '@/components/ToggleComponent.vue'
-  export default {
-    props: [''],
-    components: { toggleComponent: ToggleComponent }
-  }
 </script>
 
 <style>
